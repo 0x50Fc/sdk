@@ -1,1 +1,0 @@
-"use strict";function fib(e){return e<1?0:e<=2?1:fib(e-1)+fib(e-2)}worker.onMessage(function(e){"execFunc_fib"===e.type&&worker.postMessage({type:"execFunc_fib",result:fib(e.params[0])})});

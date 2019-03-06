@@ -1,1 +1,0 @@
-"use strict";for(var pageData={onShareAppMessage:function(){return{title:"slider",path:"page/component/pages/slider/slider"}}},i=1;i<5;++i)!function(a){pageData["slider"+a+"change"]=function(e){console.log("slider"+a+"发生change事件，携带值为",e.detail.value)}}(i);Page(pageData);

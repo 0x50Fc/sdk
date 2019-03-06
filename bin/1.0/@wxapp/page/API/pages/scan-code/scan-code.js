@@ -1,1 +1,0 @@
-"use strict";Page({onShareAppMessage:function(){return{title:"扫码",path:"page/API/pages/scan-code/scan-code"}},data:{result:""},scanCode:function(){var s=this;wx.scanCode({success:function(e){s.setData({result:e.result})},fail:function(){}})}});

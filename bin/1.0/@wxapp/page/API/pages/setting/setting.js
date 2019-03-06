@@ -1,1 +1,0 @@
-"use strict";Page({onShareAppMessage:function(){return{title:"设置",path:"page/API/pages/setting/setting"}},data:{setting:{}},getSetting:function(){var e=this;wx.getSetting({success:function(t){console.log(t),e.setData({setting:t.authSetting})}})}});
