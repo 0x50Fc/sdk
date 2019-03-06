@@ -1,0 +1,1 @@
+"use strict";var app=getApp();Page({onShareAppMessage:function(){return{title:"微信登录",path:"page/API/pages/login/login"}},onLoad:function(){this.setData({hasLogin:app.globalData.hasLogin})},data:{},login:function(){var a=this;wx.login({success:function(){app.globalData.hasLogin=!0,a.setData({hasLogin:!0})}})}});

@@ -1,0 +1,1 @@
+"use strict";Page({onShareAppMessage:function(){return{title:"收货地址",path:"page/API/pages/choose-address/choose-address"}},data:{addressInfo:null},chooseAddress:function(){var e=this;wx.chooseAddress({success:function(s){e.setData({addressInfo:s})},fail:function(s){console.log(s)}})}});

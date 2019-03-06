@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<body layout="relative" width="100%" height="100%" background-color="#ffffff">
+    <scroll width="100%" height="100%" layout="flex" overflow-x="hidden"
+        padding="{{topbar.padding}}" >
+        <view reuse="item" width="100%" height="120rpx" padding="20rpx"
+            kk:for="{{items}}" data-type="{{item.type}}" data-path="{{item.path}}" ontap="onTapAction"
+            style:hover="opacity: 0.6" style="opacity: 1.0">
+            <text font="32rpx" color="#000" left="0px">{{item.title}}</text>
+            <view width="100%" height="1rpx" background-color="#e5e5e5" bottom="-20rpx" ></view>
+        </view>
+    </scroll>
+</body>
